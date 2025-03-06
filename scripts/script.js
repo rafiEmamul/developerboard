@@ -17,7 +17,7 @@ btns.forEach(function(btn) {
       const title = btn.closest('.cart').querySelector('.title').innerText;
       const currentTime = new Date();
       const formattedTime = formatTime(currentTime);
-      const message = `Congrates !! You have completed all the current task "${title}" at ${formattedTime}`;
+      const message = `You have completed the task "${title}" at ${formattedTime}`;
       const activityLog = document.querySelector('.body-right p');
       const newLog = document.createElement('p');
       newLog.textContent = message;
@@ -38,7 +38,7 @@ btns.forEach(function(btn) {
 
       if (assignValue === 0) {
         alert("Successfully Add Activity Log");
-        alert("You have completed all the tasks");
+        alert("Congrets !! You have completed all the current tasks");
       }
 
       btn.disabled = true;
